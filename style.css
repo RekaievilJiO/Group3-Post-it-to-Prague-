@@ -530,3 +530,38 @@ button.development-board:focus-visible {
   height: auto;
   min-width: 0;
 }
+
+#instagram-title {
+  font-family: "Gajraj One";
+  font-weight: 400;
+}
+.home-image {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: #fff;
+  font: inherit;
+  cursor: zoom-in;
+}
+.home-image:focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 4px;
+}
+.instagram-three,
+.instagram-two {
+  display: grid;
+  align-items: start;
+  gap: 1rem;
+}
+.instagram-three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.instagram-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 2rem;
+}
+#instagram img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

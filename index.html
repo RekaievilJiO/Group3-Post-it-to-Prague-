@@ -7,8 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Gajraj+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css?v=pq27-walls-1">
-  <script src="./script.js?v=gallery-pair-1" defer></script>
+  <link rel="stylesheet" href="./style.css?v=instagram-zoom-1">
+  <script src="./script.js?v=instagram-zoom-1" defer></script>
 </head>
 <body id="top">
   <div class="page-background" aria-hidden="true">
@@ -46,16 +46,16 @@
     <section id="brand-toolkit" aria-labelledby="brand-toolkit-title">
       <h2 id="brand-toolkit-title"><span class="brand-title">Brand toolkit</span><span class="brand-description">: Selfmade Font - as decoration</span></h2>
       <figure class="brand-main-element">
-        <div class="brand-font-panel brand-font-main"><img src="./assets/brand-toolkit/pq27-font1black.jpg" alt="Main decorative font elements" loading="lazy" decoding="async"></div>
+        <button type="button" class="brand-font-panel brand-font-main home-image" aria-label="Enlarge decorative font"><img src="./assets/brand-toolkit/pq27-font1black.jpg" alt="Main decorative font elements" loading="lazy" decoding="async"></button>
         <figcaption>Main Element （only capital letters）</figcaption>
       </figure>
       <div class="brand-font-panels">
         <figure class="brand-font-group">
-          <div class="brand-font-panel brand-font-first"><img src="./assets/brand-toolkit/pq27-font1black.jpg" alt="Selfmade capital letters A–O" loading="lazy" decoding="async"></div>
+          <button type="button" class="brand-font-panel brand-font-first home-image" aria-label="Enlarge decorative font"><img src="./assets/brand-toolkit/pq27-font1black.jpg" alt="Selfmade capital letters A–O" loading="lazy" decoding="async"></button>
           <figcaption>A-O</figcaption>
         </figure>
         <figure class="brand-font-group">
-          <div class="brand-font-panel brand-font-second"><img src="./assets/brand-toolkit/pq27-font1black.jpg" alt="Selfmade capital letters P–Z" loading="lazy" decoding="async"></div>
+          <button type="button" class="brand-font-panel brand-font-second home-image" aria-label="Enlarge decorative font"><img src="./assets/brand-toolkit/pq27-font1black.jpg" alt="Selfmade capital letters P–Z" loading="lazy" decoding="async"></button>
           <figcaption>P-Z</figcaption>
         </figure>
       </div>
@@ -63,8 +63,20 @@
     <section id="pq27-walls" aria-labelledby="pq27-walls-title">
       <h2 id="pq27-walls-title">PQ27 Walls</h2>
       <div class="walls-images">
-        <img src="./assets/walls/PQwalls.png" alt="PQ27 exhibition wall design, first view" width="4961" height="3508" loading="lazy" decoding="async">
-        <img src="./assets/walls/Pqwalls2.png" alt="PQ27 exhibition wall design, second view" width="4961" height="3508" loading="lazy" decoding="async">
+        <button type="button" class="home-image" aria-label="Enlarge PQ27 wall design"><img src="./assets/walls/PQwalls.png" alt="PQ27 exhibition wall design, first view" width="4961" height="3508" loading="lazy" decoding="async"></button>
+        <button type="button" class="home-image" aria-label="Enlarge PQ27 wall design"><img src="./assets/walls/Pqwalls2.png" alt="PQ27 exhibition wall design, second view" width="4961" height="3508" loading="lazy" decoding="async"></button>
+      </div>
+    </section>
+    <section id="instagram" aria-labelledby="instagram-title">
+      <h2 id="instagram-title">Follow our Instagram.</h2>
+      <div class="instagram-three">
+        <button type="button" class="home-image" aria-label="Enlarge Instagram mockup 1"><img src="./assets/instagram/Instagram1mockup1.png" alt="Instagram mockup 1" loading="lazy" decoding="async"></button>
+        <button type="button" class="home-image" aria-label="Enlarge Instagram mockup 2"><img src="./assets/instagram/Instagram1mockup2.png" alt="Instagram mockup 2" loading="lazy" decoding="async"></button>
+        <button type="button" class="home-image" aria-label="Enlarge Instagram mockup 3"><img src="./assets/instagram/Instagram1mockup3.png" alt="Instagram mockup 3" loading="lazy" decoding="async"></button>
+      </div>
+      <div class="instagram-two">
+        <button type="button" class="home-image" aria-label="Enlarge Instagram story mockup"><img src="./assets/instagram/Insstorymockup1.png" alt="Instagram story mockup" loading="lazy" decoding="async"></button>
+        <button type="button" class="home-image" aria-label="Enlarge Exhibition posters on a wall"><img src="./assets/gallery/Posteronthewall.png" alt="Exhibition posters on a wall" loading="lazy" decoding="async"></button>
       </div>
     </section>
   </main>
@@ -94,5 +106,9 @@
   <nav class="development-actions" aria-label="Page controls">
     <a href="#top">Top</a>
   </nav>
+  <dialog class="image-lightbox" aria-label="Enlarged image">
+    <button type="button" class="lightbox-close" aria-label="Close enlarged image">×</button>
+    <img class="lightbox-image" alt="">
+  </dialog>
 </body>
 </html>

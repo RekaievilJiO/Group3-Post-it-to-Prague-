@@ -79,7 +79,7 @@ if (lightbox) {
   const closeButton = lightbox.querySelector(".lightbox-close");
   let opener = null;
   let previousOverflow = "";
-  document.querySelectorAll("button.development-board").forEach((button) => {
+  document.querySelectorAll("button.development-board, button.home-image").forEach((button) => {
     button.addEventListener("click", () => {
       const thumbnail = button.querySelector("img");
       opener = button;
