@@ -465,7 +465,7 @@ button.development-board:focus-visible {
   background: #fff;
 }
 .brand-font-first { aspect-ratio: 657 / 430; }
-.brand-font-second { aspect-ratio: 657 / 397; }
+.brand-font-second { aspect-ratio: 657 / 430; }
 .brand-font-panel img {
   position: absolute;
   left: 0;
@@ -474,7 +474,7 @@ button.development-board:focus-visible {
   height: auto;
 }
 .brand-font-first img { top: -25.581395%; }
-.brand-font-second img { top: -136.020151%; }
+.brand-font-second img { top: -125.581395%; }
 @media (max-width: 600px) {
   .brand-font-panels { grid-template-columns: minmax(0, 1fr); }
 }
