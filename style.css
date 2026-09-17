@@ -698,3 +698,18 @@ button.development-board:focus-visible {
 .logo-stacked-black img { width: 80%; }
 .logo-stacked-white, .logo-dark { background: #000; }
 #feedback-us { min-height: 12rem; }
+
+/* Compact, centered feedback letterform with its original proportions. */
+.feedback-letterform {
+  width: min(100%, 22rem);
+  margin: 0 auto;
+}
+.feedback-letterform img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.feedback-letterform figcaption {
+  margin-top: 1rem;
+  text-align: center;
+}
