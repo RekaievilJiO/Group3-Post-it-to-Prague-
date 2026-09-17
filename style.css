@@ -432,3 +432,8 @@ button.development-board:focus-visible {
   min-height: 24rem;
   padding-block: 3rem;
 }
+
+/* Keep the Development subtitle separate from the image grid. */
+.development-page {
+  padding-top: 3rem;
+}
