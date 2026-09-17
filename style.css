@@ -718,3 +718,32 @@ button.development-board:focus-visible {
 .pdf-download-slot { min-height: 5rem; }
 .final-folio-page .logo-stacked-white img { width: 132.4%; }
 .final-folio-page .logo-horizontal img { width: 131.1%; }
+
+/* Final Works: enlarge the story artwork by excluding its blank side margins. */
+.final-instagram-window {
+  display: block;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1015 / 1794;
+  overflow: hidden;
+}
+.final-instagram-window img {
+  position: absolute;
+  display: block;
+  width: 295.566502%;
+  max-width: none;
+  height: auto;
+  left: -97.73399%;
+  top: -4.738016%;
+}
+.final-folio-page .final-instagram { aspect-ratio: auto; align-self: center; }
+.final-pairs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+}
+.final-pairs .development-board,
+.final-wall .development-board { aspect-ratio: auto; }
+.final-pairs .development-board > img,
+.final-wall .development-board > img { height: auto; }
+.final-wall { margin-top: 3rem; }
