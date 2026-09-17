@@ -295,3 +295,63 @@ section + section {
 .page-background-right {
   transform: scaleX(-1);
 }
+
+/* Development uses portrait boards matching the first supplied image. */
+.development-content {
+  display: grid;
+  gap: 3rem;
+  padding-block: 3rem;
+}
+
+.development-board {
+  width: 100%;
+  aspect-ratio: 2480 / 3508;
+  min-width: 0;
+  background: #fff;
+}
+
+.development-board > img,
+.development-cell > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.development-logos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.development-tapes {
+  display: grid;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.development-cell {
+  min-width: 0;
+  min-height: 0;
+}
+
+.development-back,
+.development-back:visited {
+  position: fixed;
+  bottom: 1rem;
+  right: max(1rem, calc((100% - 1200px - clamp(1rem, 4vw, 3rem) - 2cm) / 2 + 1rem));
+  z-index: 10;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid #111;
+  background: #fff;
+  color: #111;
+  text-decoration: none;
+}
+
+.development-back:hover {
+  text-decoration: underline;
+}
+
+.development-back:focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 3px;
+}
