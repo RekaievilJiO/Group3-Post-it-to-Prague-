@@ -3,9 +3,18 @@
   box-sizing: border-box;
 }
 
+/* Temporary outer background; replace with a background image later. */
+html {
+  background: #bfbfbf;
+}
+
+/* Opaque paper, using the existing content width and padding. */
 body {
-  margin: 0;
-  padding: clamp(1rem, 4vw, 3rem);
+  --page-padding: clamp(1rem, 4vw, 3rem);
+  max-width: calc(1200px + var(--page-padding) + var(--page-padding));
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: var(--page-padding);
   background: #fff;
   color: #111;
   font-family: "Electrolize";
