@@ -666,3 +666,35 @@ button.development-board:focus-visible {
   margin-top: 1rem;
   text-align: center;
 }
+
+/* A normal block establishes reliable crop bounds inside each button. */
+.instagram-cropped { aspect-ratio: auto; overflow: visible; }
+.instagram-crop-window {
+  display: block;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1015 / 1794;
+  overflow: hidden;
+}
+.logos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+.logo-panel {
+  position: relative;
+  aspect-ratio: 8 / 5;
+  overflow: hidden;
+}
+.logo-panel img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 147%;
+  max-width: none;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+.logo-stacked-black img { width: 80%; }
+.logo-stacked-white, .logo-dark { background: #000; }
+#feedback-us { min-height: 12rem; }
