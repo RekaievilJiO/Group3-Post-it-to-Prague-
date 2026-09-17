@@ -1,8 +1,35 @@
 "use strict";
 
-// Add real project images here after placing the files in assets/.
-// Each entry uses this shape: { src: "./assets/filename.jpg", alt: "Image description" }.
-const galleryImages = [];
+const galleryImages = [
+  {
+    "src": "./assets/development/connertape1.png",
+    "alt": "Corner tape design"
+  },
+  {
+    "src": "./assets/development/D_Collagedevelopment2.png",
+    "alt": "Collage development"
+  },
+  {
+    "src": "./assets/finallogowhite1.png",
+    "alt": "Post it to Prague logo"
+  },
+  {
+    "src": "./assets/gallery/fnalbiglogo1.png",
+    "alt": "Post it to Prague white logo on black"
+  },
+  {
+    "src": "./assets/gallery/Posteronthewall.png",
+    "alt": "Prague exhibition posters on a wall"
+  },
+  {
+    "src": "./assets/gallery/tape1rp.png",
+    "alt": "Red and white patterned tape"
+  },
+  {
+    "src": "./assets/gallery/tape2rp.png",
+    "alt": "Black and cream patterned tape"
+  }
+];
 
 const gallery = document.querySelector(".gallery");
 
