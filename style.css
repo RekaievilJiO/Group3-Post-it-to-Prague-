@@ -201,14 +201,23 @@ section + section {
 }
 
 .footer-logo {
-  display: flex;
-  align-items: center;
+  position: relative;
   width: 10rem;
   max-width: 100%;
-  min-height: 4rem;
-  padding: 0.75rem;
-  border: 1px solid #fff;
+  aspect-ratio: 2140 / 750;
+  overflow: hidden;
+  background: #fff;
   margin-bottom: 1.5rem;
+}
+
+/* Display only the logo bounds while keeping the supplied PNG unchanged. */
+.footer-logo img {
+  position: absolute;
+  width: 163.925234%;
+  max-width: none;
+  height: auto;
+  left: -32.242991%;
+  top: -115.333333%;
 }
 
 .footer-contact {
