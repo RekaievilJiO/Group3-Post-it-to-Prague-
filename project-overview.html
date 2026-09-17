@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Post it to Prague</title>
+  <title>Project Overview — Post it to Prague</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Gajraj+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css?v=shared-pages-1">
-  <script src="./script.js?v=gallery-1" defer></script>
+  <script src="./script.js?v=lightbox-1" defer></script>
 </head>
 <body id="top">
   <div class="page-background" aria-hidden="true">
@@ -16,37 +16,16 @@
     <div class="page-background-right"></div>
   </div>
   <header class="project-header">
-    <h1>“Post it to Prague”</h1>
+    <h1><a class="project-home-link" href="./index.html">“Post it to Prague”</a></h1>
     <nav class="project-nav" aria-label="Project sections">
       <a href="./final-folio.html">Final Folio</a>
-      <a href="./project-overview.html">Project Overview</a>
+      <a href="./project-overview.html" aria-current="page">Project Overview</a>
       <a href="./development.html">Development</a>
       <a href="./research.html">Research</a>
     </nav>
   </header>
-  <main>
-    <div class="gallery" role="region" aria-label="Project images" aria-roledescription="carousel">
-      <div class="gallery-frame">
-        <img class="gallery-image" hidden alt="">
-        <div class="gallery-controls">
-          <button type="button" class="gallery-previous" aria-label="Previous image" disabled>←</button>
-          <span class="gallery-counter" aria-live="polite" aria-atomic="true"></span>
-          <button type="button" class="gallery-next" aria-label="Next image" disabled>→</button>
-        </div>
-      </div>
-    </div>
-    <section id="final-folio" aria-labelledby="final-folio-title">
-      <h2 id="final-folio-title">Final Folio</h2>
-      <div class="content-placeholder" aria-hidden="true"><!-- Final folio content will be added here. --></div>
-    </section>
-    <section id="project-overview" aria-labelledby="project-overview-title">
-      <h2 id="project-overview-title">Project Overview</h2>
-      <div class="content-placeholder" aria-hidden="true"><!-- Project overview content will be added here. --></div>
-    </section>
-    <section id="research" aria-labelledby="research-title">
-      <h2 id="research-title">Research</h2>
-      <div class="content-placeholder" aria-hidden="true"><!-- Research content will be added here. --></div>
-    </section>
+  <main class="subpage-content" aria-labelledby="page-heading">
+    <h2 class="page-heading" id="page-heading">Project Overview</h2>
   </main>
   <footer class="site-footer">
     <div class="footer-content">
@@ -72,6 +51,7 @@
     </div>
   </footer>
   <nav class="development-actions" aria-label="Page controls">
+    <a href="./index.html">Back</a>
     <a href="#top">Top</a>
   </nav>
 </body>
