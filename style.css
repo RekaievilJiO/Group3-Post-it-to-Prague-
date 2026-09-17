@@ -394,6 +394,7 @@ button.development-board:focus-visible {
   background: rgba(0, 0, 0, 0.85);
 }
 .lightbox-image {
+  background: #fff;
   display: block;
   width: auto;
   height: auto;
