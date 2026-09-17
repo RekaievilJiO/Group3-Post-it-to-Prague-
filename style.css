@@ -272,3 +272,26 @@ section + section {
 .footer-contact {
   overflow-wrap: anywhere;
 }
+
+/* Fixed decorative background; the opaque paper stays above it. */
+.page-background {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.page-background-left,
+.page-background-right {
+  background-image: url("./assets/Tapeposter1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page-background-right {
+  transform: scaleX(-1);
+}
