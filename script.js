@@ -41,3 +41,29 @@ if (gallery) {
 
   renderImage();
 }
+
+const lightbox = document.querySelector(".image-lightbox");
+if (lightbox) {
+  const enlarged = lightbox.querySelector(".lightbox-image");
+  const closeButton = lightbox.querySelector(".lightbox-close");
+  let opener = null;
+  let previousOverflow = "";
+  document.querySelectorAll("button.development-board").forEach((button) => {
+    button.addEventListener("click", () => {
+      const thumbnail = button.querySelector("img");
+      opener = button;
+      enlarged.src = thumbnail.currentSrc || thumbnail.src;
+      enlarged.alt = thumbnail.alt;
+      previousOverflow = document.documentElement.style.overflow;
+      document.documentElement.style.overflow = "hidden";
+      lightbox.showModal();
+      closeButton.focus();
+    });
+  });
+  closeButton.addEventListener("click", () => lightbox.close());
+  lightbox.addEventListener("close", () => {
+    document.documentElement.style.overflow = previousOverflow;
+    enlarged.removeAttribute("src");
+    opener?.focus({ preventScroll: true });
+  });
+}
