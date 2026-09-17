@@ -569,7 +569,7 @@ button.development-board:focus-visible {
 /* Remove mockup canvas margins without stretching the artwork. */
 .instagram-six {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 0.566)) repeat(3, minmax(0, 0.71054));
+  grid-template-columns: repeat(3, minmax(0, 0.566fr)) repeat(3, minmax(0, 0.71054fr));
   gap: clamp(0.25rem, 0.65vw, 0.5rem);
   align-items: start;
 }
