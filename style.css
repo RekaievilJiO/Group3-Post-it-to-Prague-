@@ -1,7 +1,101 @@
-/* Basic styles for the initial website scaffold. */
+/* Simple single-page layout, ready for project content and visual references. */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  padding: 2rem;
-  font-family: Arial, sans-serif;
+  padding: clamp(1rem, 4vw, 3rem);
+  background: #fff;
+  color: #111;
+  font-family: "Electrolize";
+  font-weight: 400;
   line-height: 1.5;
+}
+
+.project-header,
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+h1 {
+  margin: 0 0 2rem;
+  font-family: "Gajraj One";
+  font-size: clamp(2.5rem, 8vw, 7rem);
+  font-weight: 400;
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+}
+
+h2 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 400;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.project-nav {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border: 1px solid currentColor;
+}
+
+.project-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 4rem;
+  padding: 1rem;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+}
+
+.project-nav a + a {
+  border-left: 1px solid currentColor;
+}
+
+.project-nav a:hover {
+  text-decoration: underline;
+}
+
+.project-nav a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: -5px;
+}
+
+section {
+  padding-block: 3rem;
+  scroll-margin-top: 1rem;
+}
+
+section + section {
+  border-top: 1px solid #ddd;
+}
+
+/* Empty blocks reserve space without adding unapproved text or imagery. */
+.content-placeholder {
+  min-height: 18rem;
+  border: 1px dashed #ccc;
+}
+
+@media (max-width: 600px) {
+  .project-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-nav a:nth-child(3) {
+    border-left: 0;
+  }
+
+  .project-nav a:nth-child(n + 3) {
+    border-top: 1px solid currentColor;
+  }
 }
