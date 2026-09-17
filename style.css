@@ -20,6 +20,7 @@ main {
 }
 
 h1 {
+  text-align: center;
   margin: 0 0 2rem;
   font-family: "Gajraj One";
   font-size: clamp(2.5rem, 8vw, 7rem);
