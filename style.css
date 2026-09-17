@@ -299,6 +299,7 @@ section + section {
 /* Development uses portrait boards matching the first supplied image. */
 .development-content {
   display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 3rem;
   padding-block: 3rem;
 }
@@ -334,12 +335,17 @@ section + section {
   min-height: 0;
 }
 
-.development-back,
-.development-back:visited {
+.development-actions {
   position: fixed;
   bottom: 1rem;
   right: max(1rem, calc((100% - 1200px - clamp(1rem, 4vw, 3rem) - 2cm) / 2 + 1rem));
   z-index: 10;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.development-actions a,
+.development-actions a:visited {
   padding: 0.75rem 1.25rem;
   border: 1px solid #111;
   background: #fff;
@@ -347,11 +353,18 @@ section + section {
   text-decoration: none;
 }
 
-.development-back:hover {
+.development-actions a:hover {
   text-decoration: underline;
 }
 
-.development-back:focus-visible {
+.project-home-link,
+.project-home-link:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.development-actions a:focus-visible,
+.project-home-link:focus-visible {
   outline: 2px solid #111;
   outline-offset: 3px;
 }
