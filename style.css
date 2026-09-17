@@ -442,3 +442,39 @@ button.development-board:focus-visible {
 .development-page {
   padding-top: 3rem;
 }
+
+/* Home section titles and the decorative font specimen. */
+#overview-title,
+.brand-title {
+  font-family: "Gajraj One";
+  font-weight: 400;
+}
+.brand-description {
+  font-family: "Electrolize";
+  font-weight: 400;
+}
+.brand-font-panels {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  align-items: start;
+}
+.brand-font-panel {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+.brand-font-first { aspect-ratio: 657 / 540; }
+.brand-font-second { aspect-ratio: 657 / 397; }
+.brand-font-panel img {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.brand-font-first img { top: 0; }
+.brand-font-second img { top: -136.020151%; }
+@media (max-width: 600px) {
+  .brand-font-panels { grid-template-columns: minmax(0, 1fr); }
+}
