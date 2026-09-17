@@ -766,3 +766,32 @@ button.development-board:focus-visible {
   top: -15%;
   transform: translateX(-50%);
 }
+
+/* Additional Final Works: cropped badge pair, followed by three-column rows. */
+.final-badges {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+  align-items: center;
+  margin-top: 3rem;
+}
+.final-badges > .home-image > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.final-badge-window {
+  display: block;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4000 / 1750;
+  overflow: hidden;
+}
+.final-badge-window img {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
