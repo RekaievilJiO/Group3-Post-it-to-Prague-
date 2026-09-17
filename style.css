@@ -130,7 +130,8 @@ section + section {
 
 .gallery-frame {
   position: relative;
-  height: calc(18rem + 1.5rem + clamp(2.25rem, 4.5vw, 3rem));
+  height: calc(18rem + 1.5rem + clamp(2.25rem, 4.5vw, 3rem) + 3cm);
+  padding-block: 1.5cm;
   border: 1px solid #ccc;
   background: #fff;
 }
