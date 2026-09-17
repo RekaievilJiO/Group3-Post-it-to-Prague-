@@ -747,3 +747,22 @@ button.development-board:focus-visible {
 .final-pairs .development-board > img,
 .final-wall .development-board > img { height: auto; }
 .final-wall { margin-top: 3rem; }
+
+/* Enlarge only row five's first artwork within its existing grid space. */
+.final-story-window {
+  display: block;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2480 / 3508;
+  overflow: hidden;
+}
+.final-story-window img {
+  position: absolute;
+  display: block;
+  height: 130%;
+  width: auto;
+  max-width: none;
+  left: 50%;
+  top: -15%;
+  transform: translateX(-50%);
+}
