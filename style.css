@@ -713,3 +713,8 @@ button.development-board:focus-visible {
   margin-top: 1rem;
   text-align: center;
 }
+
+/* Final Folio reserves the future PDF link above the image-only works. */
+.pdf-download-slot { min-height: 5rem; }
+.final-folio-page .logo-stacked-white img { width: 132.4%; }
+.final-folio-page .logo-horizontal img { width: 131.1%; }
