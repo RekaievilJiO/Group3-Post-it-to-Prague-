@@ -464,7 +464,7 @@ button.development-board:focus-visible {
   overflow: hidden;
   background: #fff;
 }
-.brand-font-first { aspect-ratio: 657 / 540; }
+.brand-font-first { aspect-ratio: 657 / 430; }
 .brand-font-second { aspect-ratio: 657 / 397; }
 .brand-font-panel img {
   position: absolute;
@@ -473,7 +473,7 @@ button.development-board:focus-visible {
   width: 100%;
   height: auto;
 }
-.brand-font-first img { top: 0; }
+.brand-font-first img { top: -25.581395%; }
 .brand-font-second img { top: -136.020151%; }
 @media (max-width: 600px) {
   .brand-font-panels { grid-template-columns: minmax(0, 1fr); }
@@ -495,4 +495,21 @@ button.development-board:focus-visible {
   min-height: 0;
   object-fit: cover;
   object-position: center;
+}
+
+.brand-main-element {
+  width: min(100%, 36rem);
+  margin: 2rem auto 3rem;
+}
+.brand-font-main { aspect-ratio: 510 / 110; }
+.brand-font-main img {
+  width: 128.823529%;
+  max-width: none;
+  top: 0;
+}
+.brand-font-group { margin: 0; }
+#brand-toolkit figcaption {
+  margin-top: 1rem;
+  text-align: center;
+  font-family: "Electrolize";
 }
