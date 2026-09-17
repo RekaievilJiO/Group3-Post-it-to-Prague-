@@ -632,3 +632,37 @@ button.development-board:focus-visible {
   margin-top: 1rem;
   text-align: center;
 }
+
+/* Fill the sticker column while clipping only the surplus lower canvas. */
+.merch-stickers {
+  position: relative;
+  overflow: hidden;
+}
+.merch-images .merch-stickers img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.merch-badge {
+  width: 100%;
+  margin: 2rem auto 0;
+}
+.badge-crop {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4000 / 1750;
+}
+.badge-crop img {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.merch-badge figcaption {
+  margin-top: 1rem;
+  text-align: center;
+}
