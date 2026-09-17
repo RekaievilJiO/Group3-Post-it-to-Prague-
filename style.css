@@ -181,3 +181,66 @@ section + section {
   padding: 0.25rem 0.5rem;
   background: #fff;
 }
+
+/* Match the white paper width without changing the existing page layout. */
+.site-footer {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(calc(100% + var(--page-padding) + var(--page-padding)), calc(1200px + var(--page-padding) + 2cm));
+  margin-bottom: calc(-1 * var(--page-padding));
+  padding: 3rem var(--page-padding);
+  background: #000;
+  color: #fff;
+  text-align: left;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  width: 10rem;
+  max-width: 100%;
+  min-height: 4rem;
+  padding: 0.75rem;
+  border: 1px solid #fff;
+  margin-bottom: 1.5rem;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.site-footer a,
+.site-footer a:visited {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.site-footer a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+.footer-members p {
+  margin: 0 0 1rem;
+}
+
+.footer-members ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-note {
+  margin: 2rem 0 0;
+}
