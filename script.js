@@ -29,12 +29,14 @@ const galleryImages = [
     "src": "./assets/gallery/tape2rp.png",
     "alt": "Black and cream patterned tape"
   }
+  ,{ "pair": true }
 ];
 
 const gallery = document.querySelector(".gallery");
 
 if (gallery) {
   const image = gallery.querySelector(".gallery-image");
+  const pair = gallery.querySelector(".gallery-pair");
   const previous = gallery.querySelector(".gallery-previous");
   const next = gallery.querySelector(".gallery-next");
   const counter = gallery.querySelector(".gallery-counter");
@@ -44,9 +46,11 @@ if (gallery) {
     const total = galleryImages.length;
     previous.disabled = total < 2;
     next.disabled = total < 2;
-    image.hidden = total === 0;
+    const isPair = total > 0 && galleryImages[currentIndex].pair === true;
+    image.hidden = total === 0 || isPair;
+    if (pair) pair.hidden = !isPair;
     counter.textContent = total ? `${currentIndex + 1} / ${total}` : "";
-    if (!total) return;
+    if (!total || isPair) return;
     image.src = galleryImages[currentIndex].src;
     image.alt = galleryImages[currentIndex].alt;
   }
