@@ -565,3 +565,39 @@ button.development-board:focus-visible {
   width: 100%;
   height: auto;
 }
+
+/* Remove mockup canvas margins without stretching the artwork. */
+.instagram-six {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 0.566)) repeat(3, minmax(0, 0.71054));
+  gap: clamp(0.25rem, 0.65vw, 0.5rem);
+  align-items: start;
+}
+.instagram-cropped {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1015 / 1794;
+}
+#instagram .instagram-cropped img {
+  position: absolute;
+  width: 295.566502%;
+  max-width: none;
+  height: auto;
+  left: -97.73399%;
+  top: -4.738016%;
+}
+.instagram-poster { aspect-ratio: 3525 / 4961; }
+.instagram-story {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+#instagram .instagram-story img {
+  position: absolute;
+  height: 130.062087%;
+  width: auto;
+  max-width: none;
+  left: 50%;
+  top: -15.061454%;
+  transform: translateX(-50%);
+}
