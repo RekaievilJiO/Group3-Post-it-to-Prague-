@@ -11,15 +11,27 @@ html {
 /* Opaque paper, using the existing content width and padding. */
 body {
   --page-padding: clamp(1rem, 4vw, 3rem);
+  position: relative;
+  isolation: isolate;
   max-width: calc(1200px + var(--page-padding) + var(--page-padding));
   min-height: 100vh;
   margin: 0 auto;
   padding: var(--page-padding);
-  background: #fff;
+  background: #bfbfbf;
   color: #111;
   font-family: "Electrolize";
   font-weight: 400;
   line-height: 1.5;
+}
+
+/* Keep all content geometry unchanged; reveal gray within existing side gutters. */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0 calc(var(--page-padding) / 2);
+  z-index: -1;
+  background: #fff;
+  pointer-events: none;
 }
 
 .project-header,
